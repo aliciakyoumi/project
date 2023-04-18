@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>MESSAGE US</title>
+        <link rel="stylesheet" href="message.css"/>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+         <nav class="container-navbar">
+            <img src="kucing.png" width="8%" height="100%"/>
+            <div>
+                <a href="index.html" class="menu">HOME</a>
+                <a href="profile.html" class="menu">OUR PROFILE</a>
+                <a href="message.html" class="menu">MESSAGE US</a>
+            </div>
+         </nav>
+        </header>
+        <!-- MAIN -->
+        <div class="container-content4">
+        <h1>tolong berikan saran Anda(^.^)</h1>
+        </div>
+        <div class="container-content5">
+            <form name="message-form" onsubmit="return validateForm()">
+                Nama :
+                <input placeholder="name" type="text" name="full-name" />
+                <br />
+                
+                Email :
+                <input placeholder="email" type="text" name="email" />
+                <br />
+
+                Saran :
+                <textarea placeholder="saran" name="messages"></textarea>
+                <br />
+
+                <input type="submit" value="Submit" />
+            </form>
+         </div>
+        <!-- FOOTER -->
+        <div class="container-footer">
+            <h1 class="h1-footer">created by Alicia</h1>
+         </div>
+    </body>
+</html>

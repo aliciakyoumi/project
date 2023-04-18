@@ -1,0 +1,96 @@
+<html>
+    <script src="main.js"></script>
+    <head>
+        <title>CAT LOVERS</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header">
+         <nav class="container-navbar">
+            <img src="kucing.png" width="8%" height="100%"/>
+            <div>
+                <a href="index.html" class="menu">HOME</a>
+                <a href="profile.html" class="menu">OUR PROFILE</a>
+                <a href="message.html" class="menu">MESSAGE US</a>
+            </div>
+         </nav>
+        </header>
+
+        <!-- CONTENT 1 -->
+         <div class="container-content1">
+            <img src="catttttt.png" width="350px" height="253px"/>
+         </div>
+        <!-- CONTENT 2 -->
+         <div class="container-content2">
+            <script>
+                alert ("Halo Cat Lovers!!")
+                var username = prompt ('Siapakah nama Anda?')
+                document.write ("Hi " + username + ", Welcome to Website CAT LOVERS!!")
+            </script>
+         </div>
+        <!-- CONTENT 3 -->
+         <div class="container-content3">
+            <p>website tempat berkumpulnya para penyayang kucing</p>
+         </div>
+        <!-- CONTENT 10 -->
+         <div class="container-content10">
+            <h1>Beberapa cara menyayangi kucing (^-^)</h1>
+         </div>
+        <!-- CONTENT 4 -->
+         <div class="container-content4">
+            <img src="dipeluk.png" width="210px" height="150px"/>
+            <img src="dimandikan.png" width="210px" height="150px"/>
+            <img src="diberimakan.png" width="210px" height="150px"/>
+         </div>
+        <!-- CONTENT 5 -->
+        <div class="container-content5">
+            <h1>dipeluk</h1>
+            <h2>dimandikan<h2>
+            <h3>diberi makan</h3>
+        </div>
+        <!-- CONTENT 8 -->
+        <div class="container-content8">
+            <h1>berikan pesan atau solusi untuk mereka pemilik dan pecinta kucing!!</h1>
+        </div>
+        <!-- CONTENT 9 -->
+        <div class="container-content9">
+          <div class="form-section">
+            <form name="message-form" onsubmit="return validateForm()">
+                Nama :
+                <input placeholder="name" type="text" name="full-name" required />
+                <br />
+                
+                Tanggal Lahir :
+                <input type="date" name="birth-date" required />
+                <br />
+
+                Jenis Kelamin :
+                <input type="radio" id="male" name="gender" value="Laki-laki" required />
+                <Label for="male">Laki-laki</Label>
+                <input type="radio" id="female" name="gender" value="Perempuan" required />
+                <Label for="female">Perempuan</Label>
+                <br />
+
+                Pesan :
+                <textarea placeholder="Pesan" name="messages" required></textarea>
+                <br />
+
+                <input type="submit" value="Submit" />
+            </form>
+            <div class="form-output">
+                <p>Nama : <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                <p>Pesan : <span id="sender-messages"></span></p>
+            </div>
+           </div>
+         </div>
+        <!-- FOOTER -->
+
+         <div class="container-footer">
+            <h1 class="h1-footer">created by Alicia</h1>
+         </div>
+
+    </body>
+</html>
