@@ -1,0 +1,319 @@
+/* Import Font dari Google */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+/* General Body Styles */
+body {
+    background-image: 
+        linear-gradient(rgb(248, 248, 246), rgba(224, 216, 196, 0.9)), 
+        url('3.png');
+
+    /* Properti ini memastikan gambar background menutupi seluruh layar */
+    background-size: cover;
+    
+    /* Memposisikan gambar di tengah */
+    background-position: center center;
+
+    /* Membuat gambar background tetap diam saat halaman di-scroll (efek parallax) */
+    background-attachment: fixed;
+
+    /* Properti yang sudah ada sebelumnya */
+    margin: 0;
+    font-family: 'Nunito', sans-serif; 
+    color: #4a4a4a;
+}
+
+/* Header & Navigation */
+.header {
+    background-color: rgb(196, 194, 194);
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 75px;
+}
+
+.navbar-logo img {
+    width: 55px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.navbar-links a {
+    padding: 10px 18px;
+    border-radius: 20px; /* Membuat tombol lebih bulat */
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #fff2d4;
+    color: #c58940;
+}
+
+.navbar-links a.active {
+    background-color: #e5a742;
+    color: white;
+    box-shadow: 0 2px 5px rgba(229, 167, 66, 0.4);
+}
+
+/* --- Profile Page Specific Styles --- */
+.profile-header {
+    background-color: #dbbd8b;
+    color: white;
+    padding: 7px 3px;
+    text-align: center;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.profile-header p {
+    font-size: 1em;
+    opacity: 0.9;
+}
+
+.gallery-section {
+    padding: 10px 5px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* Kode BARU untuk galeri (menggunakan Flexbox) */
+.image-gallery {
+    display: flex;            
+    flex-direction: row;      
+    overflow-x: auto;         
+    overflow-y: hidden;      
+    padding-bottom: 10px;     
+    gap: 10px;
+}
+
+/* OPSIONAL: Menyembunyikan scrollbar agar terlihat lebih rapi */
+.image-gallery::-webkit-scrollbar {
+    height: 8px; /* Mengatur tinggi scrollbar */
+}
+.image-gallery::-webkit-scrollbar-thumb {
+    background: #e5a742; /* Warna scrollbar */
+    border-radius: 10px;
+}
+.image-gallery::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); /* Warna track di belakang scrollbar */
+    border-radius: 10px;
+}
+.image-gallery img {
+    width: 190px;             
+    height: 190px;            
+    flex-shrink: 0;          
+    
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* --- MAIN LAYOUT (2 KOLOM) --- */
+.main-layout {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto; /* Memberi jarak dari header */
+    gap: 30px; /* Jarak antara kolom kiri dan kanan */
+    padding: 10px;
+}
+
+.main-content {
+    flex: 2; /* Kolom kiri lebih besar */
+}
+
+.sidebar-form {
+    flex: 1; /* Kolom kanan lebih kecil */
+}
+
+/* --- STYLING KONTEN KIRI --- */
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* Ubah ke warna putih semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur untuk kaca buram */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Garis tepi tipis untuk efek kaca */
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.hero-section img {
+    max-width: 50px; /* Ukuran gambar disesuaikan */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.welcome-message {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #c58940; /* Warna disamakan dengan aksen */
+    margin: 0;
+}
+
+.welcome-subtitle {
+    font-size: 1.1em;
+    color: #777;
+    margin-top: 5px;
+}
+
+.features-section {
+    margin-top: 20px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Ubah ke warna putih semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur untuk kaca buram */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Garis tepi tipis untuk efek kaca */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 800;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.features-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-8px); /* Efek mengangkat saat di-hover */
+}
+
+.feature-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feature-item p {
+    font-size: 1.1em;
+    padding: 5px 0;
+    margin: 0;
+    font-weight: 700;
+    color: #555;
+}
+
+/* --- STYLING SIDEBAR KANAN (FORM) --- */
+.form-wrapper {
+    background-color: rgba(255, 255, 255, 0.5); /* Ubah ke warna putih semi-transparan */
+    backdrop-filter: blur(10px); /* Efek blur untuk kaca buram */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Garis tepi tipis untuk efek kaca */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    height: 100%;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-wrapper label {
+    font-weight: 700;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: -5px;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="date"],
+.form-wrapper textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-wrapper input:focus, .form-wrapper textarea:focus {
+    outline: none;
+    border-color: #e5a742;
+    box-shadow: 0 0 0 3px rgba(229, 167, 66, 0.2);
+}
+
+.form-wrapper .gender-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.form-wrapper input[type="submit"] {
+    padding: 12px;
+    background-color: #e5a742;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-wrapper input[type="submit"]:hover {
+    background-color: #c58940;
+    transform: translateY(-2px);
+}
+
+.form-output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-left: 5px solid #2196f3;
+    border-radius: 8px;
+    display: none;
+}
+
+.form-output p { margin: 5px 0; font-size: 0.95em; }
+.form-output span { font-weight: 700; }
+
+/* --- FOOTER --- */
+.container-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #eee;
+}
