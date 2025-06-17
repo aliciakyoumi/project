@@ -4,8 +4,7 @@ function showWelcomeMessage() {
     const welcomeElement = document.getElementById('welcome-message');
 
     if (welcomeElement) {
-        alert("Halo Cat Lovers!!");
-        const username = prompt("Siapakah nama Anda?");
+        const username = prompt("Halo Cat Lovers!! Siapakah namamu?");
 
         // Cek jika pengguna memasukkan nama (bukan kosong atau spasi saja)
         if (username && username.trim() !== '') {
